@@ -80,3 +80,28 @@ For more examples and ideas, visit:
 
 这是我在本地做的，用于学习docker怎么容器化
 
+我已经写了一个现成的demo项目，其依赖环境为node.js。如果你想要试着用这个项目来实践，可以访问[这里]()进入该项目目录下，创建`Dockerfile`文件，写入
+
+```Dockerfile
+FROM node:18-alpine     # 使用什么环境
+
+WORKDIR /app            # 进入某工作目录 类似cd
+
+COPY package*.json ./   # 复制依赖目录
+
+RUN npm install         # 安装依赖
+
+COPY . ./               # 复制整个项目
+
+EXPOSE 3000             # 项目需要暴露3000端口
+
+CMD ["node", "app.js"]  # 执行命令开始跑项目
+```
+
+然后执行
+
+```bash
+sudo docker build -t my-first-image .
+```
+
+项目镜像应该就构建完成了，接下来可以尝试运行这个项目
