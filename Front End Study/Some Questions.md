@@ -113,3 +113,12 @@ scroll-behavior: smooth;
 ```html
 <script src="script.js"></script>
 ```
+
+### 为什么我用form提交的表单报错了？
+
+有可能是你`post`的不是`JSON`格式，在你`app.js`里边加这个
+
+```js
+app.use(express.urlencoded({ extended: true }));
+```
+
