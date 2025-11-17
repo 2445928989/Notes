@@ -80,7 +80,7 @@ For more examples and ideas, visit:
 
 这是我在本地做的，用于学习docker怎么容器化
 
-我已经写了一个现成的demo项目，其依赖环境为node.js。如果你想要试着用这个项目来实践，可以访问[这里]()进入该项目目录下，创建`Dockerfile`文件，写入
+我已经写了一个现成的demo项目，其依赖环境为node.js。如果你想要试着用这个项目来实践，可以访问[这里](https://github.com/2445928989/my-first-api.git)进入该项目目录下，创建`Dockerfile`文件，写入
 
 ```Dockerfile
 FROM node:18-alpine     # 使用什么环境
