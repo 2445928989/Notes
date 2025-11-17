@@ -64,11 +64,11 @@
 
 ### 属性选择器
 
-[attr] 有attr属性的元素
+\[attr] 有attr属性的元素
 
-[attr=value] attr属性的值为value
+\[attr=value] attr属性的值为value
 
-[attr~=value] attr属性的值有value
+\[attr~=value] attr属性的值有value
 
 \[attr|=value] attr属性的值为value-.....
 
@@ -96,13 +96,13 @@ border-box实际高度：height。
 
 ### 背景图片不随滚动条改变而改变
 
-```
+```css
 background-attachment: fixed;
 ```
 
 ### 平滑滚动条
 
-```
+```css
 scroll-behavior: smooth;
 ```
 
@@ -110,6 +110,6 @@ scroll-behavior: smooth;
 
 请把以下代码放到body的最后。肯定是在DOM对象加载好之前就跑script了
 
-```
+```html
 <script src="script.js"></script>
 ```
