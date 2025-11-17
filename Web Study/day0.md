@@ -80,5 +80,7 @@ app.use('./api/articles', ArticlesRouter);
 首先你需要把前端作为静态文件引入后端
 
 ```js
-
+app.use(express.static('public'));
 ```
+
+前端发请求可以用
