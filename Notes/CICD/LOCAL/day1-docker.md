@@ -106,3 +106,26 @@ sudo docker build -t my-first-image .
 
 项目镜像应该就构建完成了，接下来可以尝试运行这个项目
 
+```bash
+sudo docker run -p 3000:3000 my-first-image
+```
+
+发现可以在本地访问这个项目，运行成功了。
+
+# 4.优化
+
+可以写一个类似于`.gitignore`的`dockerignore`
+
+```dockerignore
+node_modules
+npm-debug.log
+.git
+.gitignore
+README.md
+.env
+.DS_Store
+*.log
+```
+
+这样可以让你构建的`image`不包含一些没用的东西
+
