@@ -83,4 +83,4 @@ app.use('./api/articles', ArticlesRouter);
 app.use(express.static('public'));
 ```
 
-前端发请求可以用
+前端发请求可以用`fetch`函数
