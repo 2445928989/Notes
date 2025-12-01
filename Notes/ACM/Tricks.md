@@ -8,6 +8,3 @@
 
 来源：[P4643 [国家集训队] 阿狸和桃子的游戏 - 洛谷](https://www.luogu.com.cn/problem/P4643)
 
-$$
-
-$$
