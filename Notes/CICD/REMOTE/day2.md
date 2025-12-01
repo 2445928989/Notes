@@ -16,3 +16,9 @@ flowchart TD
     G -- 6.运行新版本 --> H[“应用成功部署”]
 ```
 那么首先要配环境
+
+Docker
+```bash
+sudo apt install docker.io
+```
+
