@@ -27,6 +27,40 @@ sudo apt install docker.io
 ## 2. Kuberetes（使用 k3s）
 
 ```bash
-curl -sfL http://rancher-mirror.cnrancher.com/k3s/k3s-install.sh | INSTALL_K3S_MIRROR=cn sh - #使用镜像
+sudo curl -sfL https://rancher-mirror.rancher.cn/k3s/k3s-install.sh | INSTALL_K3S_MIRROR=cn sh -s - server \
+    --system-default-registry "registry.cn-hangzhou.aliyuncs.com" \
+    --write-kubeconfig ~/.kube/config \
+    --write-kubeconfig-mode 666 \
+    --disable traefik
+```
+
+验证
+
+```bash
+sudo systemctl status k3s
+#检查集群节点状态
+sudo k3s kubectl get nodes
+#查看组件是否健康
+sudo k3s kubectl get componentstatuses
+```
+
+## 3. Jenkins
+
+使用 docker 来安装 Jenkins
+```bash
+# 创建 Jenkins 数据卷，用于持久化配置
+docker volume create jenkins_data
+
+# 运行 Jenkins 容器
+docker run -d \
+  --name jenkins \
+  --restart=always \
+  -u root \
+  -p 8080:8080 \
+  -p 50000:50000 \
+  -v jenkins_data:/var/jenkins_home \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v /usr/local/bin/k3s:/usr/local/bin/k3s \
+  jenkins/jenkins:lts-jdk17
 ```
 
