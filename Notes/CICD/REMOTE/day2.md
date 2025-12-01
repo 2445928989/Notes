@@ -67,4 +67,4 @@ docker run -d \
 docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 
-
+访问 `http://<IP>:8080` 来访问 Jenkins (注意要设置云服务器的防火墙使 8080 端口准入)
