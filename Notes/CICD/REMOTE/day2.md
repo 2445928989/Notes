@@ -84,3 +84,15 @@ docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 ### 2. 在 Jenkins 中配置 GitLab 的连接和凭据
 
 #### 1. 添加令牌
+
+进入 Jenkins 的**“Manage Jenkins”** -> **“Credentials”** -> **“System”** -> **“Global credentials (unrestricted)”** -> **“Add Credentials”**，种类选择 **“Secret text”**，添加 API 令牌
+![[Pasted image 20251201175701.png]]
+
+#### 2. 配置GitLab服务器地址
+
+进入 **“Manage Jenkins”** -> **“Configure System”**，找到 GitLab 插件设置，配置如下
+
+![[Pasted image 20251201175859.png]]
+
+#### 3. 配置 Webhook
+
