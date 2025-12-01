@@ -1,4 +1,4 @@
-清理一下思路，我们要做的事情其实是借助学校的 GitLab 平台，完成一条自动化流水线
+理清一下思路，我们要做的事情其实是借助学校的 GitLab 平台，完成一条自动化流水线
 
 这条流水线的核心是：**当代码被推送到学校的GitLab时，自动触发我云服务器上的Jenkins，由Jenkins 完成 Docker 镜像的构建和推送，并最终部署到 K8s 集群中**
 
@@ -15,7 +15,7 @@ flowchart TD
     G -- 5.拉取镜像 --> F
     G -- 6.运行新版本 --> H[应用成功部署]
 ```
-# 1.配环境
+# 1. 配环境
 
 ## 1.Docker
 
@@ -73,5 +73,14 @@ docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 
 ![[Pasted image 20251201153700.png]]
 
-配置 Jenkins 镜像源 `https://mirrors.huaweicloud.com/jenkins/updates/update-center.json`
+在 Jenkins 中下载插件 `GitLab`、`Kubernetes CLI`
 
+# 2. 配置工具链
+
+### 1. 申请访问令牌
+
+访问 [GitLab平台](http://www.gwdi365.com:985/) ，申请一个个人访问令牌给 Jenkins 用 ![[Pasted image 20251201174737.png]]
+
+### 2. 在 Jenkins 中配置 GitLab 的连接和凭据
+
+#### 1. 添加令牌
