@@ -96,3 +96,5 @@ docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 
 ### 3. 配置 Webhook
 
+#### 1. 在 Jenkins 中创建一个 pipeline 任务
+
