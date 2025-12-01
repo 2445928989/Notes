@@ -72,3 +72,6 @@ docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 如图是正在下载社区推荐插件
 
 ![[Pasted image 20251201153700.png]]
+
+配置 Jenkins 镜像源 `https://mirrors.huaweicloud.com/jenkins/updates/update-center.json`
+
