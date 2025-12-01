@@ -62,5 +62,9 @@ docker run -d \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v /usr/local/bin/k3s:/usr/local/bin/k3s \
   jenkins/jenkins:lts-jdk17
+
+#查看密码
+docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 ```
+
 
