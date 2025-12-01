@@ -82,7 +82,7 @@
 
 ### 将背景设为透明
 
-```
+```css
 background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('image.jpg') center/cover no-repeat;
 ```
 
