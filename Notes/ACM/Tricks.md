@@ -2,32 +2,35 @@
 
 先处理出强连通分量，对于每一个强连通分量，设定一个点的点权 $f(u)$ 为 $0$，然后开始BFS，对于每条权值为 $w$ 的有向边 $u\rightarrow v$，设 $f(v)=f(u)-w$，如果存在非零环，则必然会在某一点处产生矛盾。
 
-来源：[Obliviate, Then Reincarnate - 题目 - QOJ.ac](https://qoj.ac/contest/1865/problem/9810)
+**来源：**[Obliviate, Then Reincarnate - 题目 - QOJ.ac](https://qoj.ac/contest/1865/problem/9810)
 
 # 边权均分到两端点上
 
-来源：[P4643 [国家集训队] 阿狸和桃子的游戏 - 洛谷](https://www.luogu.com.cn/problem/P4643)
+**来源：**[P4643 [国家集训队] 阿狸和桃子的游戏 - 洛谷](https://www.luogu.com.cn/problem/P4643)
 
 # 将排列交换相邻两项得到目标排列的次数
 
 我们考虑将 $(1,2,3,4,5,6,\dots,n)$ 变换为 $P=(P_0,P_1,P_2,P_3,P_4,P_5,P_6,\dots,n)$ 发现每次贪心地交换都会使逆序对数+1 ，于是次数就是 $P$ 的逆序对数 (可以考虑冒泡排序对逆序对数的影响，问题等价)
 
-来源：[F - Simple Operations on Sequence](https://atcoder.jp/contests/abc232/tasks/abc232_f?lang=en)
+**来源：**[F - Simple Operations on Sequence](https://atcoder.jp/contests/abc232/tasks/abc232_f?lang=en)
 
 # 将排列任意交换两项得到有序排列的次数
 
 设排列的长度为 $n$，将该排列进行循环分解后得到 $c$ 个置换环（包括长度为 $1$ 的环，即不动点）。则最少交换次数为：$n−c$
 
- 来源：
+** 来源：**
 
 # 交换排列中的任意两项逆序对数的奇偶性改变
 
-假设我们交换 $P_a,P_b(a<b)$，首先 $P_a$ 与 $P_b$ 两者间产生的的逆序对数肯定会要么 $+1$ 要么 $-1$，接下来我们分别来考虑 $P_i(i<a),P_j(a<j<b),P_k(k>b)$ 对逆序对数的影响：
+假设我们交换 $P_a,P_b(a<b)$：
+首先 $P_a$ 与 $P_b$ 两者间产生的的逆序对数肯定会**要么 $+1$ 要么 $-1$**，接下来我们分别来考虑 $P_i(i<a),P_j(a<j<b),P_k(k>b)$ 对逆序对数的影响：
 
-可以发现 $P_i$ 与 $P_k$ 在交换前后显然对逆序对数的个数无影响。
+可以发现 $P_i$ 与 $P_k$ 在交换前后显然对逆序对数的个数**无影响**。
+
 
 考虑 $P_j$ 对逆序对数的个数的影响，可以发现在交换前 $P_j$ 与 $P_a,P_b$ 产生的逆序对数 $$x=\underset{j=a+1}{\overset{b-1}{\Sigma}}[P_j>P_b]+[P_j<P_a]$$
-而交换后等于 $$y=\underset{j=a+1}{\overset{b-1}{\Sigma}}[P_j<P_b]+[P_j>P_a]$$ 而我们知道在一个排列里某个 $P_j$ 肯定要么 $>P_a$ 要么 $<P_a$，因此可以发现式 $2$ 可以改写为 $$y=2\times(a-b-2)-x$$ 也就是说 $x+y=偶数$，那么 $x,y$ 奇偶性一定是一样的，因此交换前后奇偶性不变。
+而交换后等于 $$y=\underset{j=a+1}{\overset{b-1}{\Sigma}}[P_j<P_b]+[P_j>P_a]$$ 而我们知道在一个排列里某个 $P_j$ 肯定要么 $>P_a$ 要么 $<P_a$，因此可以发现式 $2$ 可以改写为 $$y=2\times(a-b-2)-x$$ 也就是说 $x+y=偶数$，那么 $x,y$ 奇偶性一定是一样的，因此交换前后**奇偶性不变**。
 
 综上我们得到了 $P_a$ 与 $P_b$ 两者间产生的逆序对数奇偶性改变，而其他部分与 $P_a, P_b$ 之间产生的逆序对数的奇偶性是不变的，于是在交换前后排列整体逆序对数奇偶性翻转。
 
+**来源：**[A-Loopy Laggon_"现代汽车前瞻杯"2025牛客暑期多校训练营7](https://ac.nowcoder.com/acm/contest/108304/A)
