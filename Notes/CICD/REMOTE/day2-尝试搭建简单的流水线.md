@@ -94,7 +94,5 @@ docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 
 ![[Pasted image 20251201175859.png]]
 
-### 3. 配置 Webhook
-
-#### 1. 在 Jenkins 中创建一个 pipeline 任务
+接下文 [[day3-继续搭建简单流水线]]
 
