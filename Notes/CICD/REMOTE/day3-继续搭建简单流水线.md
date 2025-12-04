@@ -11,3 +11,11 @@
 
 
 ![[Pasted image 20251204163416.png]]
+
+在 GitLab 里设置 webhook
+
+![[Pasted image 20251204165039.png]]
+
+注意配置触发事件
+
+![[Pasted image 20251204165048.png]]
