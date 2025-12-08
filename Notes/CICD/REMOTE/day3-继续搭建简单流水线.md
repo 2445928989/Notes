@@ -28,3 +28,27 @@
 关掉 SSL 认证
 
 ![[Pasted image 20251208152658.png]]
+
+测试 webhook 连通性
+
+![[Pasted image 20251208153251.png]]
+
+Return 200，连通
+
+#### 3. 配置 Jenkins 流水线
+
+首先，我们尝试更新 Gitlab 中的项目代码，测试一下流水线，我更改了一下 README.md 然后 commit
+
+转到 Jenkins
+
+![[Snipaste_2025-12-08_15-37-09.png]]
+
+可以发现 build 失败了，看看终端输出
+
+![[Snipaste_2025-12-08_15-39-04.png]]
+
+报错说 No flow definition, cannot run
+
+因为我并没有配置流水线，因此我们需要配置流水线
+
+##### 1. 编写 Jenkinsfile
