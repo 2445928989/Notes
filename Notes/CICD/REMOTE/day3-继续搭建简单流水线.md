@@ -55,3 +55,44 @@ Return 200，连通
 
 Jenkinsfile 需要 dockerfile，这里我使用了我以前写的一个小项目 ([[day1-部署示例项目到服务器并远程访问]]) 同款
 
+我写了一个 Jenkinsfile 用于配置流水线
+
+```groovy
+// Jenkinsfile
+pipeline {
+    agent any // 使用任何可用的Jenkins代理（就是你的服务器）
+
+    environment {
+        // 定义镜像名称，使用你的私有仓库地址和项目名
+        IMAGE_NAME = '121.40.85.134:5000/my-first-api:build-${BUILD_NUMBER}'
+    }
+
+    stages {
+        // 第一阶段：构建Docker镜像
+        stage('构建 Docker 镜像') {
+            steps {
+                script {
+                    echo 'building image...'
+                    echo '  image name:${IMAGE_NAME}'
+                    
+                    // 核心命令：使用你项目里现成的 Dockerfile 构建
+                    sh 'docker build -t ${IMAGE_NAME} .'
+                    
+                    echo 'image build ok'
+                }
+            }
+        }
+        
+    }
+
+    post {
+        success {
+            echo 'build success!'
+        }
+        failure {
+            echo 'build fail...'
+        }
+    }
+}
+```
+
