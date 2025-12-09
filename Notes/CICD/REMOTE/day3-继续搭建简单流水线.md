@@ -107,3 +107,32 @@ pipeline {
 我尝试使用 vpn 连接到学校内网，但我的云服务器并没有图形化界面，而且 ping 了一下 vpn 服务器发现根本 ping 不通啊
 
 所以只能退而求其次，直接把 jenkinsfile 写在 jenkins 的 pipeline 设置里面
+
+![[Pasted image 20251209172620.png]]
+
+然后我尝试 build，发现报错
+
+![[Pasted image 20251209172641.png]]
+
+原因是在 docker 容器内运行的 jenkins 无法通过 localhost 连接到 k3s 
+
+```bash
+sudo cp /etc/rancher/k3s/k3s.yaml /etc/rancher/k3s/k3s.yaml.backup
+sudo sed -i "s/127.0.0.1/172.16.62.47/g" /etc/rancher/k3s/k3s.yaml
+grep server /etc/rancher/k3s/k3s.yaml
+docker restart jenkins
+```
+
+再次尝试 build，终于成功
+
+![[Pasted image 20251209173101.png]]
+
+然后我们来测试 docker 是否正常工作
+
+```bash
+docker exec -it jenkins /bin/bash
+docker pull hello-world
+docker tag hello-world 172.16.62.47:5000/test-hello:latest
+docker push 172.16.62.47:5000/test-hello:latest
+curl http://172.16.62.47:5000/v2/_catalog
+```
