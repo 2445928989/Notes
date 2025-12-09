@@ -1,0 +1,10 @@
+{
+  "promptDelete": false,
+  "spellcheck": false,
+  "attachmentFolderPath": "res",
+  "userIgnoreFilters": [
+    "res/",
+    "copilot/"
+  ],
+  "showLineNumber": false
+}
