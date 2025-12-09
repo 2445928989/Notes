@@ -96,3 +96,14 @@ pipeline {
 }
 ```
 
+扔到项目根目录下然后 commit 测试流水线是否工作，发现无法正常工作
+
+![[Snipaste_2025-12-09_11-16-19.png]]
+
+看了一下，说是要配置 pipeline ，让他用 gitlab 项目里的 jenkinsfile
+
+但是这里有一个问题，gitlab 是在学校内网里跑的，而我的服务器没法直接访问学校内网
+
+我尝试使用 vpn 连接到学校内网，但我的云服务器并没有图形化界面，而且 ping 了一下 vpn 服务器发现根本 ping 不通啊
+
+所以只能退而求其次，直接把 jenkinsfile 写在 jenkins 的 pipeline 设置里面
