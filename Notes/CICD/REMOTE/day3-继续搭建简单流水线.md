@@ -64,7 +64,7 @@ pipeline {
 
     environment {
         // 定义镜像名称，使用你的私有仓库地址和项目名
-        IMAGE_NAME = '121.40.85.134:5000/my-first-api:build-${BUILD_NUMBER}'
+        IMAGE_NAME = '172.16.62.47:5000/my-first-api:build-${BUILD_NUMBER}'
     }
 
     stages {
@@ -136,3 +136,20 @@ docker tag hello-world 172.16.62.47:5000/test-hello:latest
 docker push 172.16.62.47:5000/test-hello:latest
 curl http://172.16.62.47:5000/v2/_catalog
 ```
+
+发现推送不了，于是再次返回更改设置
+
+```json
+// etc/docker/daemon.json
+{
+  "registry-mirrors": [
+    "https://docker.m.daocloud.io",
+    "https://docker.nju.edu.cn",
+    "https://mirror.baidubce.com"
+  ],
+  "insecure-registries": ["172.16.62.47:5000"]
+}
+```
+
+在主机和 jenkins 容器里都进行这个更改，再次尝试推送，正常工作
+
