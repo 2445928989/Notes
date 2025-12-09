@@ -85,7 +85,7 @@ docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 
 #### 1. 添加令牌
 
-进入 Jenkins 的**“Manage Jenkins”** -> **“Credentials”** -> **“System”** -> **“Global credentials (unrestricted)”** -> **“Add Credentials”**，种类选择 **“Secret text”**，添加 API 令牌
+进入 Jenkins 的 **“Manage Jenkins”** -> **“Credentials”** -> **“System”** -> **“Global credentials (unrestricted)”** -> **“Add Credentials”**，种类选择 **“Secret text”**，添加 API 令牌
 ![[Pasted image 20251201175701.png]]
 
 #### 2. 配置GitLab服务器地址
