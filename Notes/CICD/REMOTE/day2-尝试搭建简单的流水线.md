@@ -60,6 +60,9 @@ docker run -d \
   -p 50000:50000 \
   -v jenkins_data:/var/jenkins_home \
   -v /var/run/docker.sock:/var/run/docker.sock \
+  -v /usr/bin/docker:/usr/bin/docker \
+  -v $(which kubectl):/usr/local/bin/kubectl \
+  -v /etc/rancher/k3s/k3s.yaml:/root/.kube/config \
   -v /usr/local/bin/k3s:/usr/local/bin/k3s \
   jenkins/jenkins:lts-jdk17
 
