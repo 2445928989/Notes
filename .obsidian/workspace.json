@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/CICD/测试流程.md",
+                "file": "Notes/CICD/REMOTE/day4-部署到k8s中.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "测试流程"
+              "title": "day4-部署到k8s中"
             }
           },
           {
@@ -84,13 +84,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/CICD/测试流程.md",
+                "file": "Notes/CICD/REMOTE/day4-部署到k8s中.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "测试流程 的大纲"
+              "title": "day4-部署到k8s中 的大纲"
             }
           },
           {
@@ -222,11 +222,11 @@
   },
   "active": "df3e71dc2a856236",
   "lastOpenFiles": [
+    "Notes/CICD/测试流程.md",
     "res/Pasted image 20251210162458.png",
     "res/Pasted image 20251210162323.png",
     "res/Pasted image 20251210162018.png",
     "Notes/CICD/LOCAL/day1-docker.md",
-    "Notes/CICD/测试流程.md",
     "Notes/CICD/REMOTE/day4-部署到k8s中.md",
     "Notes/CICD/REMOTE/day3-继续搭建简单流水线.md",
     "res/Pasted image 20251210153321.png",
@@ -237,7 +237,6 @@
     "res/Pasted image 20251210151126.png",
     "res/Pasted image 20251210150403.png",
     "Notes/CICD/REMOTE/day2-尝试搭建简单的流水线.md",
-    "res/Pasted image 20251210145812.png",
     "Notes/CICD/REMOTE/day1-部署示例项目到服务器并远程访问.md",
     "Notes/ACM/STL.md",
     "Notes/ACM/高数.md",

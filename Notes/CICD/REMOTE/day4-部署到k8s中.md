@@ -2,8 +2,45 @@
 
 ## 2. 部署到 k8s 中
 
-K8s 是干嘛的我就不多叙述了，修改 jenkinsfile
+K8s 是干嘛的我就不多赘述了，在项目中添加一个 deployment.yaml 用于 k8s 部署描述
 
-```groovy
-
+```yaml
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-first-api-deployment
+  labels:
+    app: my-first-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-first-api
+  template:
+    metadata:
+      labels:
+        app: my-first-api
+    spec:
+      containers:
+      - name: my-first-api
+        image: IMAGE_PLACEHOLDER
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-first-api-service
+spec:
+  selector:
+    app: my-first-api
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+  type: ClusterIP
 ```
+
+运行命令使 k8s 信任仓库
