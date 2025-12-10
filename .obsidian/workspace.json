@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/CICD/REMOTE/day2-尝试搭建简单的流水线.md",
+                "file": "Notes/CICD/REMOTE/day4-部署到k8s中.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "day2-尝试搭建简单的流水线"
+              "title": "day4-部署到k8s中"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -84,13 +85,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/CICD/REMOTE/day2-尝试搭建简单的流水线.md",
+                "file": "Notes/CICD/REMOTE/day4-部署到k8s中.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "day2-尝试搭建简单的流水线 的大纲"
+              "title": "day4-部署到k8s中 的大纲"
             }
           },
           {
@@ -220,10 +221,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "df3e71dc2a856236",
+  "active": "96198f69210a50cd",
   "lastOpenFiles": [
-    "Notes/CICD/REMOTE/day1-部署示例项目到服务器并远程访问.md",
+    "res/Pasted image 20251210175437.png",
     "Notes/CICD/REMOTE/day2-尝试搭建简单的流水线.md",
+    "Notes/CICD/REMOTE/day1-部署示例项目到服务器并远程访问.md",
     "Notes/CICD/REMOTE/day4-部署到k8s中.md",
     "Notes/CICD/测试流程.md",
     "res/Pasted image 20251210162458.png",

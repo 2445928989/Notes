@@ -55,3 +55,58 @@ EOF
 sudo systemctl restart k3s
 ```
 
+更改 jenkinsfile
+
+```groovy
+pipeline {
+    agent any
+    environment {
+        IMAGE_NAME = "172.16.62.47:5000/my-first-api:build-${BUILD_NUMBER}"
+        K8S_DEPLOY_FILE = "deployment.generated.yaml"
+    }
+    stages {
+        stage('构建 Docker 镜像') {
+            steps {
+                script {
+                    echo "正在构建镜像: ${IMAGE_NAME}"
+                    sh "docker build -t ${IMAGE_NAME} ."
+                }
+            }
+        }
+        stage('推送镜像') {
+            steps {
+                script {
+                    echo "正在推送镜像到私有仓库..."
+                    sh "docker push ${IMAGE_NAME}"
+                }
+            }
+        }
+        stage('部署到 K3s') {
+            steps {
+                script {
+                    echo "deploying..."
+                    sh """
+                        sed 's|IMAGE_PLACEHOLDER|${IMAGE_NAME}|g' deployment.yaml > ${K8S_DEPLOY_FILE}
+                    """
+                    sh "kubectl apply -f ${K8S_DEPLOY_FILE}"
+                    sh "kubectl rollout status deployment/my-first-api-deployment --timeout=60s"
+                    echo "depolyment ok"
+                }
+            }
+        }
+    }
+    post {
+        success {
+            echo 'build successed'
+        }
+        failure {
+            echo 'build failed'
+        }
+    }
+}
+```
+
+尝试推送，build 成功
+
+![[Pasted image 20251210175437.png]]
+
