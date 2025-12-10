@@ -125,3 +125,13 @@ sudo docker run --detach \
   gitlab/gitlab-ce:latest
 ```
 
+登录管理员账户
+
+![[Pasted image 20251210143400.png]]
+
+用我的账号重新开一个项目
+
+![[Pasted image 20251210143623.png]]
+
+从头开始重新搞令牌
+
