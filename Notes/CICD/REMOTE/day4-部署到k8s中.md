@@ -34,13 +34,14 @@ kind: Service
 metadata:
   name: my-first-api-service
 spec:
+  type: NodePort
   selector:
     app: my-first-api
   ports:
     - protocol: TCP
       port: 80
       targetPort: 3000
-  type: ClusterIP
+      nodePort: 30000 
 ```
 
 运行命令使 k8s 信任仓库
