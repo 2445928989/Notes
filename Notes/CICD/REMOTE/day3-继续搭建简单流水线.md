@@ -63,7 +63,6 @@ pipeline {
     agent any // 使用任何可用的Jenkins代理（就是你的服务器）
 
     environment {
-        // 定义镜像名称，使用你的私有仓库地址和项目名
         IMAGE_NAME = '172.16.62.47:5000/my-first-api:build-${BUILD_NUMBER}'
     }
 
@@ -75,7 +74,7 @@ pipeline {
                     echo 'building image...'
                     echo '  image name:${IMAGE_NAME}'
                     
-                    // 核心命令：使用你项目里现成的 Dockerfile 构建
+                    // 使用项目里现成的 Dockerfile 构建
                     sh 'docker build -t ${IMAGE_NAME} .'
                     
                     echo 'image build ok'
@@ -108,12 +107,14 @@ pipeline {
 
 尝试了一下午使用 easyconnect 链接学校的 vpn，均失败
 
+##### 2. 本地部署 gitlab
+
 妈的、跟你爆了 我直接在服务器上部署 gitlab ，如何呢
 
 ```bash
 sudo docker run --detach \
   --hostname 121.40.85.134 \
-  --publish 8443:443 --publish 8081:80 --publish 8022:22 \  # 映射端口
+  --publish 8443:443 --publish 8081:80 --publish 8022:22 \
   --name gitlab \
   --restart always \
   --volume /srv/gitlab/config:/etc/gitlab \
