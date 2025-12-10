@@ -109,7 +109,7 @@ pipeline {
 
 ##### 2. 本地部署 gitlab，完成 build
 
-妈的、跟你爆了我直接在服务器上部署 gitlab ，如何呢
+妈的、跟你爆了 我直接在服务器上部署 gitlab
 
 
 ```bash
@@ -162,5 +162,67 @@ Push 了一下直接 build 成功了，牛逼
 修改 Jenkinsfile
 
 ```groovy
-
+pipeline {
+    agent any // 使用任何可用的Jenkins代理（就是你的服务器）
+    environment {
+        // 定义镜像名称，使用你的私有仓库地址和项目名
+        // 使用双引号来包含变量
+        IMAGE_NAME = "172.16.62.47:5000/my-first-api:build-${BUILD_NUMBER}"
+    }
+    stages {
+        // 第一阶段：构建Docker镜像
+        stage('构建 Docker 镜像') {
+            steps {
+                script {
+                    echo "building image..."
+                    echo "  image name: ${IMAGE_NAME}"
+                    // 核心命令：使用你项目里现成的 Dockerfile 构建
+                    sh "docker build -t ${IMAGE_NAME} ."
+                    echo "image build ok"
+                }
+            }
+        }
+        // 第二阶段：部署容器
+        stage('部署容器') {
+            steps {
+                script {
+                    echo 'running...'
+                    // 停止并移除可能存在的旧容器，然后运行新容器
+                    sh """
+                        docker stop my-node-app || true
+                        docker rm my-node-app || true
+                        docker run -d --name my-node-app -p 3000:3000 ${IMAGE_NAME}
+                    """
+                    echo 'run ok'
+                }
+            }
+        }
+    }
+    post {
+        success {
+            echo "build success!"
+        }
+        failure {
+            echo "build fail..."
+        }
+    }
+}
 ```
+
+提交，然后看 jenkins
+
+![[Pasted image 20251210153248.png]]
+
+经过漫长的等待，终于部署完成
+
+![[Pasted image 20251210153301.png]]
+
+但是部署的非常慢，我看了一眼后台
+
+![[Pasted image 20251210153321.png]]
+
+Gitlab 用了一堆内存.....
+
+此时还剩部署到 k8s 没有做，但是鉴于这内存真的很不足，我们留到明天升级一下内存配置再来做
+
+接下文 [[day4-部署到k8s中]]
