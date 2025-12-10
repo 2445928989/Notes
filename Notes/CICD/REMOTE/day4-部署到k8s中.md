@@ -44,3 +44,14 @@ spec:
 ```
 
 运行命令使 k8s 信任仓库
+
+```bash
+sudo tee /etc/rancher/k3s/registries.yaml <<EOF
+mirrors:
+  "172.16.62.47:5000":
+    endpoint:
+      - "http://172.16.62.47:5000"
+EOF
+sudo systemctl restart k3s
+```
+
