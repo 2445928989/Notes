@@ -110,3 +110,16 @@ pipeline {
 
 ![[Pasted image 20251210175437.png]]
 
+检查是否正常工作
+
+```bash
+kubectl get deployment my-first-api-deployment
+kubectl get pods -l app=my-first-api
+kubectl get service my-first-api-service
+```
+
+![[Pasted image 20251210180103.png]]
+
+![[Pasted image 20251210180115.png]]
+
+一切正常。
