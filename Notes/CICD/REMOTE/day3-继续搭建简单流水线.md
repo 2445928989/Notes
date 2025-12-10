@@ -107,7 +107,7 @@ pipeline {
 
 尝试了一下午使用 easyconnect 链接学校的 vpn，均失败
 
-##### 2. 本地部署 gitlab
+##### 2. 本地部署 gitlab，完成 build
 
 妈的、跟你爆了我直接在服务器上部署 gitlab ，如何呢
 
@@ -146,3 +146,21 @@ sudo docker run --detach \
 依旧测试webhook
 
 ![[Pasted image 20251210145812.png]]
+
+Push 了一下直接 build 成功了，牛逼
+
+![[Pasted image 20251210151126.png]]
+
+查看镜像列表，发现已经构筑完成
+
+![[Pasted image 20251210151624.png]]
+
+# 4. 将镜像部署到 k8s
+
+## 1. 测试部署到 docker
+
+修改 Jenkinsfile
+
+```groovy
+
+```
