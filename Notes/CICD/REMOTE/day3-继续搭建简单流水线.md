@@ -60,7 +60,7 @@ Jenkinsfile 需要 dockerfile，这里我使用了我以前写的一个小项目
 ```groovy
 // Jenkinsfile
 pipeline {
-    agent any // 使用任何可用的Jenkins代理（就是你的服务器）
+    agent any // 使用任何可用的Jenkins代理
 
     environment {
         IMAGE_NAME = '172.16.62.47:5000/my-first-api:build-${BUILD_NUMBER}'
@@ -141,3 +141,8 @@ sudo docker run --detach \
 
 ![[Pasted image 20251210145152.png]]
 
+![[Pasted image 20251210150403.png]]
+
+依旧测试webhook
+
+![[Pasted image 20251210145812.png]]
