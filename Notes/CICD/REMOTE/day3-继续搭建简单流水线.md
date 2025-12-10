@@ -135,3 +135,9 @@ sudo docker run --detach \
 
 从头开始重新搞令牌
 
+![[Pasted image 20251210144805.png]]
+
+![[Pasted image 20251210145035.png]]
+
+![[Pasted image 20251210145152.png]]
+
