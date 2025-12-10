@@ -106,50 +106,19 @@ pipeline {
 
 我尝试使用 vpn 连接到学校内网，但我的云服务器并没有图形化界面，而且 ping 了一下 vpn 服务器发现根本 ping 不通啊
 
-所以只能退而求其次，直接把 jenkinsfile 写在 jenkins 的 pipeline 设置里面
+尝试了一下午使用 easyconnect 链接学校的 vpn，均失败
 
-![[Pasted image 20251209172620.png]]
-
-然后我尝试 build，发现报错
-
-![[Pasted image 20251209172641.png]]
-
-原因是在 docker 容器内运行的 jenkins 无法通过 localhost 连接到 k3s 
+妈的、跟你爆了 我直接在服务器上部署 gitlab ，如何呢
 
 ```bash
-sudo cp /etc/rancher/k3s/k3s.yaml /etc/rancher/k3s/k3s.yaml.backup
-sudo sed -i "s/127.0.0.1/172.16.62.47/g" /etc/rancher/k3s/k3s.yaml
-grep server /etc/rancher/k3s/k3s.yaml
-docker restart jenkins
+sudo docker run --detach \
+  --hostname 121.40.85.134 \
+  --publish 8443:443 --publish 8081:80 --publish 8022:22 \  # 映射端口
+  --name gitlab \
+  --restart always \
+  --volume /srv/gitlab/config:/etc/gitlab \
+  --volume /srv/gitlab/logs:/var/log/gitlab \
+  --volume /srv/gitlab/data:/var/opt/gitlab \
+  --shm-size 256m \
+  gitlab/gitlab-ce:latest
 ```
-
-再次尝试 build，终于成功
-
-![[Pasted image 20251209173101.png]]
-
-然后我们来测试 docker 是否正常工作
-
-```bash
-docker exec -it jenkins /bin/bash
-docker pull hello-world
-docker tag hello-world 172.16.62.47:5000/test-hello:latest
-docker push 172.16.62.47:5000/test-hello:latest
-curl http://172.16.62.47:5000/v2/_catalog
-```
-
-发现推送不了，于是再次返回更改设置
-
-```json
-// etc/docker/daemon.json
-{
-  "registry-mirrors": [
-    "https://docker.m.daocloud.io",
-    "https://docker.nju.edu.cn",
-    "https://mirror.baidubce.com"
-  ],
-  "insecure-registries": ["172.16.62.47:5000"]
-}
-```
-
-在主机和 jenkins 容器里都进行这个更改，再次尝试推送，正常工作
-

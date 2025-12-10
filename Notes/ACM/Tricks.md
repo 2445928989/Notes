@@ -35,3 +35,17 @@
 
 **来源：**[A-Loopy Laggon_"现代汽车前瞻杯"2025牛客暑期多校训练营7](https://ac.nowcoder.com/acm/contest/108304/A)
 
+# 期望平方问题的展开
+
+给定事件 $X=\{x_1,x_2\dots x_n\}$，求 $E(X^2)$，若很难求可以考虑展开之，变成 $\underset{i=1}{\overset{n}{\Sigma}}E(x_i)^2+2\underset{i=1}{\overset{n}{\Sigma}}\underset{j=i+1}{\overset{n}{\Sigma}}E(x_ix_j)=E(X)^2+2\underset{i=1}{\overset{n}{\Sigma}}\underset{j=i+1}{\overset{n}{\Sigma}}E(x_ix_j)$, 然后计算事件期望的平方，再来考虑事件两两同时发生的贡献。
+
+**来源：**[A Game On Tree - 题目 - QOJ.ac](https://qoj.ac/contest/1817/problem/9530)
+**来源：**[Problem - E1 - Codeforces](https://codeforces.com/contest/2175/problem/E1)
+
+# 可删背包
+
+背包问题中，物品加入的顺序是无关的，所以考虑删除一个物品的贡献时，你可以假设这个物品是最后一个加进背包的，然后做一次 dp 的逆运算
+
+**来源：**[P4141 消失之物 - 洛谷](https://www.luogu.com.cn/problem/P4141)
+**来源：**[Marble Race - 题目 - QOJ.ac](https://qoj.ac/contest/1817/problem/9523)
+
