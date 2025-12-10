@@ -63,9 +63,10 @@ docker run -d \
   -v jenkins_data:/var/jenkins_home \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v /usr/bin/docker:/usr/bin/docker \
-  -v $(which kubectl):/usr/local/bin/kubectl \
-  -v /etc/rancher/k3s/k3s.yaml:/var/jenkins_home/k3s-config.yaml \
-  -v /usr/local/bin/k3s:/usr/local/bin/k3s \
+  -v $(which kubectl):/usr/bin/kubectl \
+  -v /etc/rancher/k3s/k3s.yaml:/var/jenkins_home/.kube/config \
+  -e KUBECONFIG=/var/jenkins_home/.kube/config \
+  --network host \
   jenkins/jenkins:lts-jdk17
 
 #查看密码
