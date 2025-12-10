@@ -24,6 +24,8 @@ sudo apt install docker.io
 ```
 
 配置镜像源，详见 [[day1-docker#2.测试是否工作]]
+
+后续发现镜像源也卡，干脆直接在服务器上配置 clash 了，挂个梯爽歪歪
 ## 2. Kuberetes（使用 k3s）
 
 ```bash

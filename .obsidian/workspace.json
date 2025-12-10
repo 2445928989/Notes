@@ -89,8 +89,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -207,19 +206,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "dfc559639bc0e4bc",
+  "active": "df3e71dc2a856236",
   "lastOpenFiles": [
+    "Notes/CICD/REMOTE/day2-尝试搭建简单的流水线.md",
+    "Notes/CICD/REMOTE/day1-部署示例项目到服务器并远程访问.md",
+    "Notes/CICD/REMOTE/day3-继续搭建简单流水线.md",
     "Notes/CICD/LOCAL/day1-docker.md",
     "Notes/ACM/STL.md",
     "Notes/ACM/高数.md",
     "Notes/ACM/组合数学.md",
     "Notes/ACM/Tricks.md",
-    "Notes/CICD/REMOTE/day3-继续搭建简单流水线.md",
-    "Notes/CICD/REMOTE/day2-尝试搭建简单的流水线.md",
     "res/Pasted image 20251209173101.png",
     "res/Pasted image 20251209172641.png",
     "res/Pasted image 20251209172620.png",
-    "Notes/CICD/REMOTE/day1-部署示例项目到服务器并远程访问.md",
     "res/Snipaste_2025-12-09_11-16-19.png",
     "res/Snipaste_2025-12-08_15-39-04.png",
     "res/Snipaste_2025-12-08_15-37-09.png",

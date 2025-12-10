@@ -109,7 +109,8 @@ pipeline {
 
 ##### 2. 本地部署 gitlab
 
-妈的、跟你爆了 我直接在服务器上部署 gitlab ，如何呢
+妈的、跟你爆了我直接在服务器上部署 gitlab ，如何呢
+
 
 ```bash
 sudo docker run --detach \
@@ -123,3 +124,4 @@ sudo docker run --detach \
   --shm-size 256m \
   gitlab/gitlab-ce:latest
 ```
+
