@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/CICD/REMOTE/day2-尝试搭建简单的流水线.md",
+                "file": "Notes/ACM/Tricks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "day2-尝试搭建简单的流水线"
+              "title": "Tricks"
             }
           }
         ]
@@ -208,8 +208,8 @@
   },
   "active": "df3e71dc2a856236",
   "lastOpenFiles": [
-    "Notes/CICD/REMOTE/day1-部署示例项目到服务器并远程访问.md",
     "Notes/CICD/REMOTE/day2-尝试搭建简单的流水线.md",
+    "Notes/CICD/REMOTE/day1-部署示例项目到服务器并远程访问.md",
     "Notes/CICD/REMOTE/day4-部署到k8s中.md",
     "Notes/CICD/测试流程.md",
     "res/Pasted image 20251210201802.png",
