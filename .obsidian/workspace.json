@@ -70,13 +70,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/CICD/REMOTE/day2-尝试搭建简单的流水线.md",
+                "file": "Notes/SE/SSOJ/day1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "day2-尝试搭建简单的流水线 的大纲"
+              "title": "day1 的大纲"
             }
           },
           {
@@ -89,7 +89,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -206,7 +207,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "df3e71dc2a856236",
+  "active": "dfc559639bc0e4bc",
   "lastOpenFiles": [
     "Notes/CICD/REMOTE/day4-部署到k8s中.md",
     "Notes/SE/SSOJ/day1.md",

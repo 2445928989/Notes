@@ -2,7 +2,7 @@
 
 不管怎么说，既然决定做了那就要认真来做！
 
-项目框架
+项目框架（AI 写的，感觉挺合理的。）
 
 ```
 ssoj/
@@ -154,3 +154,171 @@ ssoj/
 ├── deployment.yaml                 # K8s部署配置
 └── dockerfile                      # 项目总Dockerfile
 ```
+
+
+开始做 judger 模块
+
+上班。。。。
+
+# 基本思路
+
+judger 的基本工作流程：
+
+1. 编译用户提交的代码
+
+2. 在受限环境下运行程序
+
+3. 比对输出结果
+
+4. 返回判题结果（AC/WA/TLE/MLE/RE/CE/SE）
+
+# 模块划分
+
+- **utils** - 基础工具函数，文件读写、日志、临时目录管理
+
+- **compiler** - 编译模块，支持 C/C++ 和 Python
+
+- **runner** - 核心执行模块，负责运行程序和监控
+
+- **resource** - 资源限制和统计
+
+- **comparator** - 输出比对
+
+- **security** - 安全限制（seccomp，暂时没实现）
+
+- **main** - 主流程整合
+
+# 实现过程
+## utils.cpp
+
+先从简单的开始，写了文件读写、JSON 转义、日志这些基础功能。这部分还算顺利。
+
+有个 `createTempDir` 用的是 `mkdtemp`，要记得检查返回值是不是 NULL。还有 `trimTrailingWhitespace` 处理输出尾部空白，在比对的时候会用到。
+
+## comparator.cpp
+
+  
+
+输出比对，主要写了两种：  
+
+- 精确匹配
+
+- 忽略行尾空白
+
+没搞那些花里胡哨的，就这两个模式够用了。错误信息会明确指出哪个位置不对，Expected 是啥，Received 是啥，方便调试。
+
+SPJ 啥的以后再写
+
+## compiler.cpp
+
+  
+编译模块支持 C/C++ 和 Python。C/C++ 用 `popen` 调 g++，把编译错误信息抓出来。Python 就不用编译了，直接把源文件路径返回。
+
+
+编译参数用的是 `-O2 -std=c++17`，-O2 优化后面测试的时候还引发了一个问题。
+
+谁会用 JAVA??？以后再支持吧
+## runner.cpp
+
+这是最复杂的部分，涉及进程管理。
+
+用 `fork` 创建子进程，子进程里：
+
+- 用 `setResourceLimits` 设置资源限制
+
+- 用 `dup2` 重定向标准输入输出
+
+- 用 `execv` 执行程序
+
+父进程里用 `wait4` 监控子进程：
+
+- 非阻塞轮询（WNOHANG）
+
+- 每 10ms 检查一次
+
+- 超过墙钟时间就 kill 掉
+
+- 通过 `rusage` 获取 CPU 时间和内存使用
+
+- 根据退出信号判断状态（SIGXCPU→TLE，SIGSEGV→RE 等）
+
+## resource.cpp
+
+资源限制用 `setrlimit`：
+
+- RLIMIT_CPU - CPU 时间限制
+
+- RLIMIT_AS - 内存限制
+
+- RLIMIT_STACK - 栈限制
+
+- RLIMIT_FSIZE - 输出文件大小限制
+
+`getResourceUsage` 解析 `rusage` 结构体，算出 CPU 时间（user + system）和内存使用。
+
+# 测试和调试
+
+让 ai 写了一堆测试文件：
+
+- test_utils - 测试工具函数
+
+- test_compiler - 测试编译
+
+- test_comparator - 测试输出比对
+
+- test_runner_simple - 测试基本执行
+
+- test_runner_comprehensive - 测试各种边界情况
+
+- test_resource_limits - 测试资源限制
+
+
+测 TLE 的时候，-O2 优化把循环给优化没了，测不出来 TLE，加了个  `volatile` 关键字，解决了
+
+# 性能测试
+
+写了个 benchmark ，测一下不同数据量的运行时间：
+
+- 1e7 次操作：14ms
+
+- 1e8 次操作：101ms
+
+- 2e8 次操作：200ms
+
+- 1e9 次操作：994ms
+
+基本符合预期，简单循环大概是 1e9 次/秒。考虑到实际要寻址以及复杂的计算，1 秒时限跑 1e8~2e8 的数据量是比较合理的。
+
+### 完整流程测试
+
+最后跑了一遍完整的判题流程，测试了：
+
+- AC - A+B 问题正常通过
+
+- WA - 输出错误能准确识别
+
+- TLE - 超时检测正常
+
+- MLE - 内存超限检测（虽然这次没触发）
+
+- RE - 段错误能捕获
+
+- CE - 编译错误信息完整
+
+- Python - Python 程序也能正常判题
+
+  
+全都过了，judger 基本能用了。
+
+  
+# 总结
+
+没完成 java 的判题，但是 c++的跑通了，还行。。  
+
+SPJ 以后在搞
+
+安全也是以后再搞（或者懒得搞了随缘吧）
+
+下一步应该是和后端对接，看看实际判题效果怎么样。如果有问题再调整。
+
+搞了五个小时。好累
