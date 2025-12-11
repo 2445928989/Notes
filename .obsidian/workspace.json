@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/SE/SSOJ/day1.md",
+                "file": "Notes/Web Study/day0.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "day1"
+              "title": "day0"
             }
           }
         ]
@@ -70,13 +70,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/SE/SSOJ/day1.md",
+                "file": "Notes/Web Study/day0.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "day1 的大纲"
+              "title": "day0 的大纲"
             }
           },
           {
@@ -89,8 +89,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -207,10 +206,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "dfc559639bc0e4bc",
+  "active": "df3e71dc2a856236",
   "lastOpenFiles": [
-    "Notes/CICD/REMOTE/day4-部署到k8s中.md",
+    "res/Snipaste_2025-12-09_11-16-19.png",
+    "res/Pasted image 20251117231833.png",
+    "Notes/Front End Study/Some Questions.md",
     "Notes/SE/SSOJ/day1.md",
+    "Notes/CICD/REMOTE/day4-部署到k8s中.md",
     "Notes/SE/SSOJ",
     "Notes/SE",
     "Notes/ACM/Tricks.md",
@@ -228,7 +230,6 @@
     "res/Pasted image 20251210162018.png",
     "Notes/CICD/LOCAL/day1-docker.md",
     "Notes/CICD/REMOTE/day3-继续搭建简单流水线.md",
-    "res/Pasted image 20251210153321.png",
     "Notes/ACM/STL.md",
     "Notes/ACM/高数.md",
     "Notes/ACM/组合数学.md",
@@ -238,7 +239,6 @@
     "Notes/Web Study/day0.md",
     "Notes/Web Study/day0-temp.md",
     "templater/Sigma.md",
-    "Notes/Front End Study/Some Questions.md",
     "Notes/CICD/LOCAL/temp.md",
     "Notes/ACM/ACMtemplate.md",
     "copilot/copilot-conversations/续写一下我笔记后面的部分@20251127_142000.md",
@@ -246,7 +246,6 @@
     "copilot/memory/Recent Conversations.md",
     "template/ACM.md",
     "copilot/copilot-conversations/你读一下我ai给我的这份规划，然后仔细地给我讲讲第一部分@20251125_001239.md",
-    "copilot/copilot-conversations/帮我加几个生成函数变换封闭形式的例题进去让我自己做@20251126_221628.md",
     "templater",
     "copilot/memory",
     "template/未命名.base",
