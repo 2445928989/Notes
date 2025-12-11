@@ -48,4 +48,3 @@
 
 **来源：**[P4141 消失之物 - 洛谷](https://www.luogu.com.cn/problem/P4141)
 **来源：**[Marble Race - 题目 - QOJ.ac](https://qoj.ac/contest/1817/problem/9523)
-
