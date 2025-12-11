@@ -124,3 +124,6 @@ kubectl get service my-first-api-service
 ![[Pasted image 20251210180115.png]]
 
 一切正常。
+
+让我组员测试了一下，具体可以见[[测试流程]]中的流程
+
