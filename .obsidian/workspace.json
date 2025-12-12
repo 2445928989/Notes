@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/SE/SSOJ/day1.md",
+                "file": "Notes/SE/SSOJ/day2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "day1"
+              "title": "day2"
             }
           }
         ]
@@ -70,13 +70,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/SE/SSOJ/day1.md",
+                "file": "Notes/SE/SSOJ/day2.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "day1 的大纲"
+              "title": "day2 的大纲"
             }
           },
           {
@@ -208,11 +208,12 @@
   },
   "active": "df3e71dc2a856236",
   "lastOpenFiles": [
+    "Notes/SE/SSOJ/day1.md",
+    "Notes/SE/SSOJ/day2.md",
     "Notes/Web Study/day0.md",
     "res/Snipaste_2025-12-09_11-16-19.png",
     "res/Pasted image 20251117231833.png",
     "Notes/Front End Study/Some Questions.md",
-    "Notes/SE/SSOJ/day1.md",
     "Notes/CICD/REMOTE/day4-部署到k8s中.md",
     "Notes/SE/SSOJ",
     "Notes/SE",
