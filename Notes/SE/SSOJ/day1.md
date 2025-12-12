@@ -27,7 +27,7 @@ ssoj/
 │
 ├── backend/                        # 🌐 业务后端（Spring Boot）
 │   ├── pom.xml                     # Maven依赖配置
-│   ├── src/main/java/com/ssoj/
+│   ├── src/main/java/com/ssoj/backend
 │   │   ├── SsojApplication.java    # Spring Boot启动类
 │   │   ├── config/                 # 配置类
 │   │   │   ├── SecurityConfig.java # Spring Security配置
