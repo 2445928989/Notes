@@ -1,0 +1,288 @@
+{
+  "main": {
+    "id": "238dca048fe95873",
+    "type": "split",
+    "children": [
+      {
+        "id": "5f6f40dbd6520802",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "df3e71dc2a856236",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/SE/SSOJ/day1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "day1"
+            }
+          },
+          {
+            "id": "00619e23b3d935d9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/SE/SSOJ/day5.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "day5"
+            }
+          },
+          {
+            "id": "7111373ca3596635",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Web Study/mybatis.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "mybatis"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fffa66335369f02e",
+    "type": "split",
+    "children": [
+      {
+        "id": "3790031a588ab1f5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e199e0bd43a0c7bf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "c4077b1878c50c59",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#ACM",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "dfc559639bc0e4bc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Notes/SE/SSOJ/day1.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "day1 的大纲"
+            }
+          },
+          {
+            "id": "02d9faed1d1d0ea6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 270.5
+  },
+  "right": {
+    "id": "fce6f257da6e14e5",
+    "type": "split",
+    "children": [
+      {
+        "id": "eec5f27c11dd6da3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f2829558864ca3d1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Notes/ACM/Tricks.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Tricks 的反向链接列表"
+            }
+          },
+          {
+            "id": "43e880ff5dcba3c0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Front End Study/Some Questions.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "Some Questions 的出链列表"
+            }
+          },
+          {
+            "id": "68b094879b0228f3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "527d850bd741a4ca",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "0790544f49b84e29",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "aa50891a64c36fbc",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 400.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false,
+      "obsidian-git:Open Git source control": false,
+      "copilot:Open Copilot Chat": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "00619e23b3d935d9",
+  "lastOpenFiles": [
+    "copilot/memory/Recent Conversations.md",
+    "Notes/SE/SSOJ/day4.md",
+    "Notes/SE/SSOJ/day5.md",
+    "Notes/Web Study/mybatis.md",
+    "Notes/Web Study/day0.md",
+    "README.md",
+    "Notes/SE/SSOJ/day1.md",
+    "Notes/SE/SSOJ/day3.md",
+    "Notes/SE/SSOJ/day2.md",
+    "Notes/SQL/SQL语句.md",
+    "未命名.md",
+    "Notes/SQL",
+    "Notes/ACM/Tricks.md",
+    "Notes/ACM/STL.md",
+    "res/Snipaste_2025-12-09_11-16-19.png",
+    "res/Pasted image 20251117231833.png",
+    "Notes/Front End Study/Some Questions.md",
+    "Notes/CICD/REMOTE/day4-部署到k8s中.md",
+    "Notes/SE/SSOJ",
+    "Notes/SE",
+    "Notes/CICD/REMOTE/day2-尝试搭建简单的流水线.md",
+    "Notes/CICD/REMOTE/day1-部署示例项目到服务器并远程访问.md",
+    "Notes/CICD/测试流程.md",
+    "res/Pasted image 20251210201802.png",
+    "res/Pasted image 20251210201217.png",
+    "res/Pasted image 20251210201211.png",
+    "res/Pasted image 20251210180115.png",
+    "res/Pasted image 20251210180103.png",
+    "res/Pasted image 20251210175437.png",
+    "res/Pasted image 20251210162458.png",
+    "res/Pasted image 20251210162323.png",
+    "Notes/CICD/LOCAL/day1-docker.md",
+    "Notes/CICD/REMOTE/day3-继续搭建简单流水线.md",
+    "Notes/ACM/高数.md",
+    "Notes/ACM/组合数学.md",
+    "Notes/ACM/solution/【luogu P10655】反物质 (Day 2).md",
+    "Notes/ACM/solution/codeforces/Untitled.md",
+    "Notes/ACM/solution/codeforces/未命名.md",
+    "Notes/Web Study/day0-temp.md",
+    "templater",
+    "copilot/memory",
+    "template/未命名.base",
+    "Notes",
+    "template",
+    "copilot/copilot-conversations",
+    "copilot",
+    "未命名.canvas"
+  ]
+}

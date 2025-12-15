@@ -1,0 +1,95 @@
+{
+  "conversations": [
+    {
+      "id": "1763364140948",
+      "title": "你好",
+      "messages": [
+        {
+          "id": "1763364164076",
+          "content": "你好",
+          "role": "user",
+          "timestamp": 1763364164076
+        },
+        {
+          "id": "chatcmpl-CcnrOYmIv6HEK0FAxwk5DPO6YEeNK",
+          "content": "你好！有什么我可以帮你的吗？",
+          "role": "assistant",
+          "timestamp": 1763364164920
+        }
+      ],
+      "createdAt": 1763364140948,
+      "updatedAt": 1763364164920,
+      "model": {
+        "label": "GPT-o4-mini",
+        "value": "o4-mini"
+      }
+    },
+    {
+      "id": "1763364106183",
+      "title": "你好",
+      "messages": [
+        {
+          "id": "1763364109436",
+          "content": "你好",
+          "role": "user",
+          "timestamp": 1763364109436
+        }
+      ],
+      "createdAt": 1763364106183,
+      "updatedAt": 1763364109436,
+      "model": {
+        "label": "GPT-o4-mini",
+        "value": "o4-mini"
+      }
+    },
+    {
+      "id": "1763364077660",
+      "title": "你好",
+      "messages": [
+        {
+          "id": "1763364081364",
+          "content": "你好",
+          "role": "user",
+          "timestamp": 1763364081364
+        }
+      ],
+      "createdAt": 1763364077660,
+      "updatedAt": 1763364081364,
+      "model": {
+        "label": "GPT-o4-mini",
+        "value": "o4-mini"
+      }
+    },
+    {
+      "id": "1763363772904",
+      "title": "你好",
+      "messages": [
+        {
+          "id": "1763363772904",
+          "content": "你好",
+          "role": "user",
+          "timestamp": 1763363772904
+        },
+        {
+          "id": "1763364058663",
+          "content": "hello",
+          "role": "user",
+          "timestamp": 1763364058663
+        },
+        {
+          "id": "1763364066962",
+          "content": "你好",
+          "role": "user",
+          "timestamp": 1763364066962
+        }
+      ],
+      "createdAt": 1763363772904,
+      "updatedAt": 1763364066962,
+      "model": {
+        "label": "GPT-o4-mini",
+        "value": "o4-mini"
+      }
+    }
+  ],
+  "activeConversationId": "1763364140948"
+}
