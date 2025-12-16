@@ -128,3 +128,35 @@ public class ProblemService {
 }
 
 ```
+
+九点三十下班开始补题，以下是总结（AI 写了一半）
+
+**今天Service层工作总结：**
+
+**ProblemService** - 全部搞定
+
+- getProblems：分页 + 参数校验
+- getProblemById：id 合法性检查 + null 判断
+- getProblemsByDifficulty：修了字符串比较 bug（`!=` 改 .equals()）
+- createProblem：必填字段校验 + 默认值设置 + 重新查询补全时间戳
+- updateProblem：优化到只查一次数据库
+- deleteProblem：简单粗暴
+
+**SubmissionService** - 基本完成，还有小问题
+
+- submitCode：参数校验齐全 + 异步调用判题（传 id 而不是对象，避免循环依赖）
+- getSubmissionById：查询提交
+- getUserSubmissions/getProblemSubmissions：这两个不应该在查不到时抛异常，应该返回空列表
+- getRecentSubmissions：分页逻辑
+- updateJudgeResult：状态校验可以优化（用 Set.of 代替一堆 &&）
+
+**总体**：两个 Service 的主体逻辑都完成了，参数校验和错误处理也铺上了。就是有些细节逻辑的边界情况处理还需调整。
+
+**小巧思**
+
+```java
+problemMapper.insert(problem);
+return problemMapper.findById(problem.getId());
+```
+
+创建 problem 的时候这样写，可以让 return 的 problem 对象带有完整的时间戳等属性，非常优雅。
