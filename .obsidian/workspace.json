@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/SE/复习/复习笔记.md",
+                "file": "Notes/Diary/2025.12.24.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "复习笔记"
+              "title": "2025.12.24"
             }
           }
         ]
@@ -209,8 +209,17 @@
   },
   "active": "df3e71dc2a856236",
   "lastOpenFiles": [
-    "Notes/SE/SSOJ/day12.md",
+    "template/ACM.md",
+    "Notes/Diary/2025.12.24.md",
+    "template/Diary.md",
+    "Notes/Diary/Untitled.md",
+    "templater/Sigma.md",
+    "copilot/copilot-conversations/9.11_and_9.8,_which_is_bigger@20251118_010233.md",
+    "2025-12-25.md",
+    "Notes/CICD/测试流程.md",
+    "Notes/Diary",
     "Notes/SE/复习/复习笔记.md",
+    "Notes/SE/SSOJ/day12.md",
     "Notes/SE/复习",
     "Notes/CICD/LOCAL/day1-docker.md",
     "Notes/SE/SSOJ/day1.md",
@@ -228,19 +237,11 @@
     "copilot/memory/Recent Conversations.md",
     "Notes/Web Study/mybatis.md",
     "Notes/Web Study/day0.md",
-    "README.md",
-    "Notes/SQL/SQL语句.md",
-    "未命名.md",
     "Notes/SQL",
-    "Notes/ACM/Tricks.md",
-    "Notes/ACM/STL.md",
     "res/Snipaste_2025-12-09_11-16-19.png",
     "res/Pasted image 20251117231833.png",
-    "Notes/Front End Study/Some Questions.md",
-    "Notes/CICD/REMOTE/day4-部署到k8s中.md",
     "Notes/SE/SSOJ",
     "Notes/SE",
-    "Notes/CICD/REMOTE/day2-尝试搭建简单的流水线.md",
     "res/Pasted image 20251210201802.png",
     "res/Pasted image 20251210201217.png",
     "res/Pasted image 20251210201211.png",
@@ -254,7 +255,6 @@
     "template/未命名.base",
     "Notes",
     "template",
-    "copilot/copilot-conversations",
     "未命名.canvas"
   ]
 }
