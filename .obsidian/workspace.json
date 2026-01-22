@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/ACM/高数.md",
+                "file": "Notes/ACM/Tricks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "高数"
+              "title": "Tricks"
             }
           }
         ]
@@ -209,8 +209,8 @@
   },
   "active": "3e83248cb5862627",
   "lastOpenFiles": [
-    "Notes/ACM/组合数学.md",
     "Notes/ACM/高数.md",
+    "Notes/ACM/组合数学.md",
     "Notes/ACM/备忘.md",
     "Notes/ACM/STL.md",
     "Notes/ACM/Tricks.md",
