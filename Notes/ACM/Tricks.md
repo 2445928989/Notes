@@ -54,3 +54,9 @@
 对编号为 $[l,r]$ 中的所有点求 LCA，可以先拍扁成 dfs 序，然后取 $[l,r]$ 中 dfs 序最小和最大的点求 LCA
 
 **来源：** [Problem - 1062E - Codeforces](https://codeforces.com/problemset/problem/1062/E)
+
+# 任意数字都可以被表示为+1\*10 的操作序列
+
+虽然可能序列不唯一。
+
+**来源：**[D - Small Multiple](https://atcoder.jp/contests/arc084/tasks/arc084_b)
