@@ -49,3 +49,8 @@
 **来源：**[P4141 消失之物 - 洛谷](https://www.luogu.com.cn/problem/P4141)
 **来源：**[Marble Race - 题目 - QOJ.ac](https://qoj.ac/contest/1817/problem/9523)
 
+# 区间 LCA
+
+对编号为 $[l,r]$ 中的所有点求 LCA，可以先拍扁成 dfs 序，然后取 $[l,r]$ 中 dfs 序最小和最大的点求 LCA
+
+**来源：** [Problem - 1062E - Codeforces](https://codeforces.com/problemset/problem/1062/E)
