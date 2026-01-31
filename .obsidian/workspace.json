@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "Tricks"
             }
-          },
-          {
-            "id": "a4e61d20e2d2fc41",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.5"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.11.5"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -220,7 +207,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a4e61d20e2d2fc41",
+  "active": "3e83248cb5862627",
   "lastOpenFiles": [
     "Notes/ACM/高数.md",
     "Notes/ACM/组合数学.md",

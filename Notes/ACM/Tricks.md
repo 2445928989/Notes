@@ -60,3 +60,5 @@
 虽然可能序列不唯一。
 
 **来源：**[D - Small Multiple](https://atcoder.jp/contests/arc084/tasks/arc084_b)
+
+$\underset{}{\overset{}{\Sigma}} $$
