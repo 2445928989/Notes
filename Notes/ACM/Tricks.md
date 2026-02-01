@@ -60,7 +60,3 @@
 虽然可能序列不唯一。
 
 **来源：**[D - Small Multiple](https://atcoder.jp/contests/arc084/tasks/arc084_b)
-
-$$
-\underset{d(x)\geq d(y)}{\overset{}{\Sigma}}(d(y)-d(lca(x,y)))=\underset{x\lt y}{\overset{}{\Sigma}}\min(d(x),d(y))-\underset{x\lt y}{\overset{}{\Sigma}}d(lca(x,y))+\underset{d(x)=d(y),x\lt y}{\overset{}{\Sigma}}(d(x)-d(lca(x,y)))
-$$
