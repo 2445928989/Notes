@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/ACM/STL.md",
+                "file": "Notes/Spring Boot/Spring Boot.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "STL"
+              "title": "Spring Boot"
             }
           }
         ]
@@ -209,6 +209,9 @@
   },
   "active": "3e83248cb5862627",
   "lastOpenFiles": [
+    "Notes/ACM/STL.md",
+    "Notes/Spring Boot/Spring Boot.md",
+    "Notes/Spring Boot",
     "Notes/ACM/高数.md",
     "Notes/ACM/solution/【ZJCPC 2025 M】Master of Both VII.md",
     "Notes/ACM/solution/【luogu P10655】反物质 (Day 2).md",
@@ -218,7 +221,6 @@
     "Notes/ACM/题单.md",
     "Notes/ACM/备忘.md",
     "Notes/ACM/组合数学.md",
-    "Notes/ACM/STL.md",
     "Notes/Diary/2026.1.11.md",
     "Notes/Diary/2026.1.2.md",
     "Notes/计算机网络安全/7、入侵检测与网络欺骗.md",
@@ -236,7 +238,6 @@
     "Notes/Diary/2025.12.31.md",
     "Notes/Diary/2025.12.28.md",
     "Notes/Diary/2025.12.27.md",
-    "Notes/Diary/2025.12.26.md",
     "Notes/计算机网络安全",
     "res/Pasted image 20251229001931.png",
     "res/Pasted image 20251228230629.png",
@@ -254,7 +255,6 @@
     "templater",
     "copilot/memory",
     "template/未命名.base",
-    "Notes",
     "未命名.canvas"
   ]
 }
