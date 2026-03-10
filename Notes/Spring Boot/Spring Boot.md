@@ -6,10 +6,13 @@
 // 设定该类或该对象的工作路径
 
 @GetMapping("/{id}")
-// 设定该方法处理对应路径下的GET请求
+// 设定该方法处理对应路径下的GET请求,{id}是给PathVarible用的
 
 @PathVariable
 // 将URL里的占位符传递给方法的参数
+
+@RequestParam
+// 将?key=value中的值传递给方法的参数
 ```
 
 ```yaml
