@@ -13,6 +13,11 @@
 
 @RequestParam
 // 将?key=value中的值传递给方法的参数
+
+@RequestBody
+// 用来接收请求体
+
+
 ```
 
 ```yaml
