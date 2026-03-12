@@ -1,6 +1,6 @@
 ```Java
 @RestController
-// 标记该类可以处理Web请求，返回JSON
+// 标记该类可以处理Web请求，返回JSON，注入对象
 
 @RequestMapping("/api")
 // 设定该类或该对象的工作路径
@@ -26,6 +26,11 @@
 @AutoWired
 // 自动获取对象不需要手动初始化
 
+@Service
+// 标记该类为一个Service类，注入对象
+
+@Data
+// Lombok自动生成getter/setter
 ```
 
 ```yaml
