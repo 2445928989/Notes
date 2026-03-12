@@ -26,6 +26,11 @@ server.servlet.set-context
 
 server.port
 # 端口
+
+server.profiles.active
+# 启用哪个application-***配置文件
+
+
 ```
 
 Bean 是用来储存数据的标准化类，实现了一些通用的接口
