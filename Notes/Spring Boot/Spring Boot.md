@@ -8,15 +8,23 @@
 @GetMapping("/{id}")
 // 设定该方法处理对应路径下的GET请求,{id}是给PathVarible用的
 
-@PathVariable
+@PathVariable Long id
 // 将URL里的占位符传递给方法的参数
 
-@RequestParam
+@RequestParam Long id
 // 将?key=value中的值传递给方法的参数
 
-@RequestBody
+@RequestBody Map<String,String> map
 // 用来接收请求体
 
+@MapperScan("com.example.demo.mapper")
+// 用来标记Mapper所在软件包
+
+@Mapper
+// 标记该接口是一个Mapper
+
+@AutoWired
+// 自动获取对象不需要手动初始化
 
 ```
 
