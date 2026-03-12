@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Spring Boot/Spring Boot.md",
+                "file": "Notes/Diary/2026.3.12.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Spring Boot"
+              "title": "2026.3.12"
             }
           }
         ]
@@ -209,8 +209,9 @@
   },
   "active": "3e83248cb5862627",
   "lastOpenFiles": [
-    "Notes/ACM/STL.md",
     "Notes/Spring Boot/Spring Boot.md",
+    "Notes/Diary/2026.3.12.md",
+    "Notes/ACM/STL.md",
     "Notes/Spring Boot",
     "Notes/ACM/高数.md",
     "Notes/ACM/solution/【ZJCPC 2025 M】Master of Both VII.md",
@@ -237,7 +238,6 @@
     "res/Pasted image 20251117231833.png",
     "Notes/Diary/2025.12.31.md",
     "Notes/Diary/2025.12.28.md",
-    "Notes/Diary/2025.12.27.md",
     "Notes/计算机网络安全",
     "res/Pasted image 20251229001931.png",
     "res/Pasted image 20251228230629.png",
