@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Diary/2026.3.12.md",
+                "file": "Notes/Diary/2026.2.2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026.3.12"
+              "title": "2026.2.2"
             }
           }
         ]
@@ -209,8 +209,9 @@
   },
   "active": "3e83248cb5862627",
   "lastOpenFiles": [
-    "Notes/Spring Boot/Spring Boot.md",
     "Notes/Diary/2026.3.12.md",
+    "Notes/Diary/2026.2.2.md",
+    "Notes/Spring Boot/Spring Boot.md",
     "Notes/ACM/STL.md",
     "Notes/Spring Boot",
     "Notes/ACM/高数.md",
@@ -218,7 +219,6 @@
     "Notes/ACM/solution/【luogu P10655】反物质 (Day 2).md",
     "Notes/ACM/solution/未命名.md",
     "Notes/ACM/Tricks.md",
-    "Notes/Diary/2026.2.2.md",
     "Notes/ACM/题单.md",
     "Notes/ACM/备忘.md",
     "Notes/ACM/组合数学.md",
