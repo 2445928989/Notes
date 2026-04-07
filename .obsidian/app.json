@@ -6,7 +6,7 @@
     "res/",
     "copilot/"
   ],
-  "showLineNumber": false,
+  "showLineNumber": true,
   "pdfExportSettings": {
     "pageSize": "Letter",
     "landscape": false,
