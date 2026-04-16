@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Cpp/未命名.md",
+                "file": "Notes/Cpp/谜之八股.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "谜之八股"
             }
           }
         ]
@@ -210,7 +210,7 @@
   "active": "3e83248cb5862627",
   "lastOpenFiles": [
     "Notes/Cpp/协程.md",
-    "Notes/Cpp/未命名.md",
+    "Notes/Cpp/谜之八股.md",
     "Notes/Cpp/网络编程.md",
     "Notes/ACM/STL.md",
     "Notes/Web Study/mybatis.md",
