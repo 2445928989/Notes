@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Cpp/谜之八股.md",
+                "file": "Notes/机组.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "谜之八股"
+              "title": "机组"
             }
           }
         ]
@@ -209,8 +209,9 @@
   },
   "active": "3e83248cb5862627",
   "lastOpenFiles": [
-    "Notes/Cpp/协程.md",
     "Notes/Cpp/谜之八股.md",
+    "Notes/机组.md",
+    "Notes/Cpp/协程.md",
     "Notes/Cpp/网络编程.md",
     "Notes/ACM/STL.md",
     "Notes/Web Study/mybatis.md",
@@ -236,7 +237,6 @@
     "Notes/计算机网络安全/6、网络防火墙.md",
     "Notes/计算机网络安全/4、拒绝服务攻击.md",
     "Notes/计算机网络安全/5、恶意代码.md",
-    "Notes/计算机网络安全/2、网络侦察、扫描与监听.md",
     "res/Snipaste_2025-12-28_00-49-48 1.png",
     "res/Pasted image 20251117231833.png",
     "Notes/计算机网络安全",
