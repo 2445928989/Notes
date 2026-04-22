@@ -209,9 +209,11 @@
   },
   "active": "3e83248cb5862627",
   "lastOpenFiles": [
-    "Notes/机组.md",
-    "Notes/Cpp/谜之八股.md",
     "Notes/Cpp/协程.md",
+    "Notes/Cpp/谜之八股.md",
+    "Notes/计组/九股.md",
+    "Notes/计组",
+    "Notes/计网",
     "Notes/Cpp/网络编程.md",
     "Notes/ACM/STL.md",
     "Notes/Web Study/mybatis.md",
@@ -236,7 +238,6 @@
     "Notes/计算机网络安全/8、VPN.md",
     "Notes/计算机网络安全/6、网络防火墙.md",
     "Notes/计算机网络安全/4、拒绝服务攻击.md",
-    "Notes/计算机网络安全/5、恶意代码.md",
     "res/Snipaste_2025-12-28_00-49-48 1.png",
     "res/Pasted image 20251117231833.png",
     "Notes/计算机网络安全",
@@ -253,8 +254,6 @@
     "Notes/SQL",
     "Notes/SE/SSOJ",
     "Notes/SE",
-    "templater",
-    "copilot/memory",
     "未命名.canvas"
   ]
 }
