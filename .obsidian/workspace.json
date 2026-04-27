@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Cpp/谜之八股.md",
+                "file": "Notes/计网/可恶的八股.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "谜之八股"
+              "title": "可恶的八股"
             }
           }
         ]
@@ -209,8 +209,8 @@
   },
   "active": "3e83248cb5862627",
   "lastOpenFiles": [
-    "Notes/计网/可恶的八股.md",
     "Notes/Cpp/谜之八股.md",
+    "Notes/计网/可恶的八股.md",
     "Notes/Cpp/网络编程.md",
     "Notes/Cpp/协程.md",
     "Notes/计组/九股.md",
