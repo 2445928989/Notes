@@ -70,13 +70,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Diary/2025.12.31.md",
+                "file": "Notes/Cpp/谜之八股.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2025.12.31 的大纲"
+              "title": "谜之八股 的大纲"
             }
           },
           {
@@ -89,7 +89,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -207,7 +208,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3e83248cb5862627",
+  "active": "dfc559639bc0e4bc",
   "lastOpenFiles": [
     "Notes/计网/可恶的八股.md",
     "Notes/Cpp/谜之八股.md",
