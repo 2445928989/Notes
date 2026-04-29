@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/MYSQL/8股.md",
+                "file": "Notes/Cpp/谜之八股.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "8股"
+              "title": "谜之八股"
             }
           }
         ]
@@ -70,13 +70,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/MYSQL/8股.md",
+                "file": "Notes/Cpp/谜之八股.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "8股 的大纲"
+              "title": "谜之八股 的大纲"
             }
           },
           {
@@ -209,8 +209,8 @@
   },
   "active": "3e83248cb5862627",
   "lastOpenFiles": [
-    "Notes/Cpp/谜之八股.md",
     "Notes/MYSQL/8股.md",
+    "Notes/Cpp/谜之八股.md",
     "Notes/MYSQL/语法.md",
     "Notes/计网/可恶的八股.md",
     "Notes/MYSQL",
