@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/MYSQL/语法.md",
+                "file": "Notes/MYSQL/8股.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "语法"
+              "title": "8股"
             }
           }
         ]
@@ -209,6 +209,7 @@
   },
   "active": "3e83248cb5862627",
   "lastOpenFiles": [
+    "Notes/MYSQL/语法.md",
     "Notes/MYSQL/8股.md",
     "Notes/Cpp/谜之八股.md",
     "Notes/计网/可恶的八股.md",
@@ -227,7 +228,6 @@
     "Notes/OS/九股.md",
     "Notes/Cpp/网络编程.md",
     "Notes/Cpp/协程.md",
-    "Notes/MYSQL/语法.md",
     "Notes/MYSQL",
     "Notes/未命名.md",
     "Notes/OS",
