@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Diary/2026.5.7.md",
+                "file": "Notes/MYSQL/8股.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026.5.7"
+              "title": "8股"
             }
           }
         ]
@@ -209,6 +209,9 @@
   },
   "active": "3e83248cb5862627",
   "lastOpenFiles": [
+    "Notes/Cpp/谜之八股.md",
+    "Notes/计网/可恶的八股.md",
+    "Notes/Diary/2026.5.7.md",
     "Notes/Diary/2025.12.24.md",
     "Notes/Diary/2025.12.25.md",
     "Notes/Diary/2025.12.26.md",
@@ -218,12 +221,9 @@
     "Notes/Diary/2026.1.2.md",
     "Notes/Diary/2026.1.11.md",
     "Notes/Diary/2026.2.2.md",
-    "Notes/Diary/2026.5.7.md",
     "Notes/Diary/2026.3.12.md",
     "Notes/MYSQL/8股.md",
-    "Notes/Cpp/谜之八股.md",
     "Notes/Notes.zip",
-    "Notes/计网/可恶的八股.md",
     "Notes/OS/九股.md",
     "Notes/Cpp/网络编程.md",
     "Notes/Cpp/协程.md",
