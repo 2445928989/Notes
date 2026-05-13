@@ -22,3 +22,14 @@ SET 命令：
 	- 指令成功，收到 VALUE
 	- 指令失败，节点已迁移，收到 MOVED，此时应该发 GETNETWORK，获取拓扑后重试，重发 GET 命令
 
+### 服务端行为
+
+接入集群
+
+作为 follower
+
+作为 master
+
+作为 PD
+
+离开集群
