@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/计网/可恶的八股.md",
+                "file": "Notes/KVJET.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "可恶的八股"
+              "title": "KVJET"
             }
           }
         ]
@@ -209,12 +209,13 @@
   },
   "active": "3e83248cb5862627",
   "lastOpenFiles": [
+    "Notes/计网/可恶的八股.md",
+    "Notes/KVJET.md",
+    "Notes/Cpp/谜之八股.md",
     "Notes/MYSQL/8股.md",
+    "Notes/MYSQL/语法.md",
     "Notes/Front End Study/Some Questions.md",
     "Notes/Spring Boot/Spring Boot.md",
-    "Notes/Cpp/谜之八股.md",
-    "Notes/计网/可恶的八股.md",
-    "Notes/MYSQL/语法.md",
     "res/Pasted image 20251229001931.png",
     "res/Snipaste_2025-12-28_00-49-48.png",
     "res/Snipaste_2025-12-09_11-16-19.png",
@@ -235,7 +236,6 @@
     "Notes/Cpp/网络编程.md",
     "Notes/Cpp/协程.md",
     "Notes/MYSQL",
-    "Notes/未命名.md",
     "Notes/OS",
     "Notes/计网",
     "Notes/ACM/STL.md",
