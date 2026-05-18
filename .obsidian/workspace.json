@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/ACM/备忘.md",
+                "file": "Notes/MYSQL/8股.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "备忘"
+              "title": "8股"
             }
           }
         ]
@@ -209,6 +209,11 @@
   },
   "active": "3e83248cb5862627",
   "lastOpenFiles": [
+    "Notes/MYSQL/语法.md",
+    "Notes/MYSQL/8股.md",
+    "Notes/计网/可恶的八股.md",
+    "Notes/Spring Boot/Spring Boot.md",
+    "Notes/ACM/备忘.md",
     "Notes/Diary/2026.1.2.md",
     "Notes/SE/SSOJ/day1.md",
     "Notes/SE/SSOJ/day4.md",
@@ -218,9 +223,7 @@
     "Notes/SE/SSOJ/day10.md",
     "Notes/SE/SSOJ/day12.md",
     "Notes/SE/SSOJ/day11.md",
-    "Notes/MYSQL/8股.md",
     "Notes/KVJET.md",
-    "Notes/计网/可恶的八股.md",
     "Notes/Cpp/谜之八股.md",
     "Notes/ACM/solution/【ZJCPC 2025 M】Master of Both VII.md",
     "Notes/ACM/solution/【luogu P10655】反物质 (Day 2).md",
@@ -232,9 +235,6 @@
     "Notes/Diary/2025.12.28.md",
     "Notes/Diary/2025.12.27.md",
     "Notes/Diary/2025.12.26.md",
-    "Notes/Diary/2025.12.25.md",
-    "Notes/Diary/2025.12.24.md",
-    "README.md",
     "res/Pasted image 20251229001931.png",
     "res/Snipaste_2025-12-28_00-49-48.png",
     "res/Snipaste_2025-12-09_11-16-19.png",
